@@ -3,3 +3,5 @@
 myenv/
 QXDM_Logs/
 *.npz
+__pycache__/
+*.egg-info/
