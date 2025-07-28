@@ -1,0 +1,40 @@
+Urban Test Scenario - Signal Analysis
+========================================
+Location: London City Center
+Test Duration: 30 minutes
+Environment: High density urban with buildings
+
+Signal Quality Measurements:
+- RSRP: -85.2 dBm (Good)
+- RSRQ: -10.1 dB (Good) 
+- SINR: 15.8 dB (Excellent)
+
+Network Performance:
+- DL Throughput: 156.8 Mbps
+- UL Throughput: 47.2 Mbps
+- Latency: 18.5 ms
+- Jitter: 2.1 ms
+
+Cell Information:
+- Primary Cell ID: 123456
+- Frequency: 3500 MHz
+- Bandwidth: 100 MHz
+- Technology: 5G NR
+
+Mobility Events:
+- Handovers: 3
+- Cell Reselections: 1
+- Radio Link Failures: 0
+
+QoS Analysis:
+- Video Streaming: Excellent (4K capable)
+- Voice Quality: MOS 4.5/5.0
+- Gaming Latency: 18ms (Good)
+- File Download: 156 Mbps peak
+
+Interference Analysis:
+- Co-channel Interference: Low
+- Adjacent Channel: Minimal  
+- Thermal Noise: -98 dBm
+
+Summary: Excellent urban performance with high throughput and low latency.

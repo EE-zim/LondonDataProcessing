@@ -1,0 +1,58 @@
+%MOBILE PARSED MESSAGE FILE
+%QCAT VERSION   : QCAT 06.30.121
+%SILK VERSION   : SILK_9.83
+%LOG FILE NAME  : Urban_Test_1.hdf
+
+%Confidential - Qualcomm Technologies, Inc.
+2025 Jul 28  10:00:00.000  [2A]  0x1FEA  Diagnostic Request  --  Diagnostic Services/Get Log Dropped Count Request
+Cmd Code: Subsystem Dispatcher Request (75)
+Subsys ID: Diagnostic Services (18)
+Subsys Cmd Code: Get Log Dropped Count Request (53)
+
+	Length:  16
+	Header:  10 00 EA 1F 00 00 00 00 00 00 00 00 
+	Payload: 4B 12 35 00 
+
+2025 Jul 28  10:00:00.125  [5D]  0x1FF0  RRC Connection Setup  --  RRC/RRC Connection Setup
+Cell ID: 123456
+RSRP: -85 dBm
+RSRQ: -10 dB
+SINR: 15 dB
+
+2025 Jul 28  10:00:01.250  [5D]  0x1FF1  MAC Scheduling Info  --  MAC/DL Scheduling Info
+RNTI: 0x1234
+Scheduling Type: PDSCH
+Resource Blocks: 50
+MCS: 28
+
+2025 Jul 28  10:00:02.375  [5D]  0x1FF2  PHY Layer Info  --  PHY/Channel Quality
+CQI: 15
+PMI: 3
+RI: 2
+HARQ Process: 0
+
+2025 Jul 28  10:00:03.500  [5D]  0x1FF3  RRC Measurement Report  --  RRC/Measurement Report
+Serving Cell RSRP: -82 dBm
+Neighbor Cell 1 RSRP: -95 dBm
+Neighbor Cell 2 RSRP: -98 dBm
+
+2025 Jul 28  10:00:04.625  [5D]  0x1FF4  Handover Command  --  RRC/Handover Command
+Source Cell ID: 123456
+Target Cell ID: 123457
+Handover Type: Intra-frequency
+
+2025 Jul 28  10:00:05.750  [5D]  0x1FF5  Data Throughput  --  PDCP/Data Statistics
+DL Throughput: 150 Mbps
+UL Throughput: 50 Mbps
+Packet Loss: 0.1%
+
+2025 Jul 28  10:00:06.875  [5D]  0x1FF6  Network Registration  --  NAS/Registration Complete
+PLMN: 234-30
+TAC: 12345
+Cell Identity: 0x1E240
+
+2025 Jul 28  10:00:08.000  [5D]  0x1FF7  QoS Flow Setup  --  NAS/QoS Flow Configuration
+QFI: 1
+5QI: 9
+GFBR DL: 100 Mbps
+GFBR UL: 50 Mbps

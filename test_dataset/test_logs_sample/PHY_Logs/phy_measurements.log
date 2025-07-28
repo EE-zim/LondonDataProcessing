@@ -1,0 +1,40 @@
+PHY Channel State Information
+Timestamp: 2025-07-28 10:00:02.000
+CQI: 15
+PMI: 3
+RI: 2
+RSRP: -85.5 dBm
+RSRQ: -10.2 dB
+SINR: 15.8 dB
+
+PHY PUSCH Transmission
+Timestamp: 2025-07-28 10:00:02.100
+Transmission Power: 10 dBm
+Resource Blocks: 10-35
+Modulation: 64QAM
+Code Rate: 0.8
+DMRS Ports: 2
+Layers: 2
+
+PHY PDSCH Reception
+Timestamp: 2025-07-28 10:00:02.200
+RSSI: -80.2 dBm
+EVM: 2.5%
+Throughput: 150.2 Mbps
+Block Error Rate: 0.1%
+Constellation: 256QAM
+
+PHY Beam Measurement
+Timestamp: 2025-07-28 10:00:02.300
+SSB Index: 8
+Beam ID: 12
+SSB RSRP: -82.1 dBm
+SSB RSRQ: -9.8 dB
+CSI-RS RSRP: -81.5 dBm
+
+PHY Frequency Synchronization
+Timestamp: 2025-07-28 10:00:02.400
+CFO Estimate: -125 Hz
+Phase Error: 2.1 degrees
+Timing Advance: 15 samples
+Symbol Timing Offset: 0.2 samples

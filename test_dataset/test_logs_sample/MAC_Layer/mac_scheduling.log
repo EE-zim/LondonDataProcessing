@@ -1,0 +1,44 @@
+MAC DL Scheduling Grant
+Timestamp: 2025-07-28 10:00:01.000
+RNTI: 0x1234
+DCI Format: 1_1
+Resource Allocation Type: 1
+Resource Blocks: 25-74 (50 RBs)
+MCS: 28
+Transport Block Size: 75376 bits
+HARQ Process: 0
+NDI: 1
+RV: 0
+
+MAC UL Scheduling Grant  
+Timestamp: 2025-07-28 10:00:01.100
+RNTI: 0x1234
+DCI Format: 0_1
+Resource Allocation Type: 1
+Resource Blocks: 10-35 (26 RBs)
+MCS: 24
+Transport Block Size: 28336 bits
+HARQ Process: 2
+NDI: 0
+RV: 0
+
+MAC HARQ Feedback
+Timestamp: 2025-07-28 10:00:01.200
+Process ID: 0
+ACK/NACK: ACK
+Round Trip Time: 8 ms
+
+MAC Buffer Status Report
+Timestamp: 2025-07-28 10:00:01.300
+LCID: 4
+Buffer Size: 5000 bytes
+LCG: 2
+
+MAC Random Access Response
+Timestamp: 2025-07-28 10:00:01.400
+RA-RNTI: 0x0010
+Timing Advance: 12
+UL Grant: 
+  Resource Blocks: 0-5
+  MCS: 0
+  TPC: 0

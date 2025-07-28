@@ -1,0 +1,51 @@
+%MOBILE PARSED MESSAGE FILE
+%QCAT VERSION   : QCAT 06.30.121
+%SILK VERSION   : SILK_9.83
+%LOG FILE NAME  : Highway_Test_1.hdf
+
+%Confidential - Qualcomm Technologies, Inc.
+2025 Jul 28  11:00:00.000  [2A]  0x1FEA  Cell Search  --  RRC/Cell Search
+Frequency: 3500 MHz
+Bandwidth: 100 MHz
+Cell ID: 234567
+
+2025 Jul 28  11:00:01.200  [5D]  0x1FF0  High Speed Mobility  --  RRC/Mobility State
+Speed: 120 km/h
+Mobility State: High
+Cell Change Count: 5
+
+2025 Jul 28  11:00:02.400  [5D]  0x1FF1  Beam Management  --  PHY/Beam Tracking
+SSB Index: 8
+CSI-RS Resource: 12
+Beam RSRP: -78 dBm
+
+2025 Jul 28  11:00:03.600  [5D]  0x1FF2  Carrier Aggregation  --  MAC/CA Configuration
+PCell: 3500 MHz
+SCell 1: 1800 MHz
+SCell 2: 2600 MHz
+Total Bandwidth: 200 MHz
+
+2025 Jul 28  11:00:04.800  [5D]  0x1FF3  Fast Handover  --  RRC/Inter-frequency Handover
+Source Frequency: 3500 MHz
+Target Frequency: 1800 MHz
+Handover Latency: 15 ms
+
+2025 Jul 28  11:00:06.000  [5D]  0x1FF4  High Throughput  --  PDCP/Peak Data Rate
+Peak DL: 2.5 Gbps
+Peak UL: 300 Mbps
+CA Utilization: 95%
+
+2025 Jul 28  11:00:07.200  [5D]  0x1FF5  Doppler Compensation  --  PHY/Frequency Offset
+Doppler Shift: 500 Hz
+CFO Estimate: -12 Hz
+Phase Noise: -95 dBc/Hz
+
+2025 Jul 28  11:00:08.400  [5D]  0x1FF6  MIMO Performance  --  PHY/MIMO Stats
+Rank: 4
+Layers: 4
+Spatial Multiplexing Gain: 3.8
+
+2025 Jul 28  11:00:09.600  [5D]  0x1FF7  Network Slice  --  NAS/Slice Selection
+S-NSSAI: 1-010203
+Network Slice Type: eMBB
+Slice Differentiator: 010203

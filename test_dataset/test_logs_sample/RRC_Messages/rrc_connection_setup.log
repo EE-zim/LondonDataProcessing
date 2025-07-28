@@ -1,0 +1,47 @@
+RRC Connection Setup Request
+Timestamp: 2025-07-28 10:00:00.000
+UE ID: 0x12345678
+Cell ID: 123456
+Establishment Cause: mo-Data
+Random Access Preamble: 32
+Message: 
+  rrcConnectionRequest: {
+    ue-Identity: {
+      randomValue: '101010101010101010101010101010101010101'B
+    }
+    establishmentCause: mo-Data
+  }
+
+RRC Connection Setup
+Timestamp: 2025-07-28 10:00:00.100
+Configuration: SRB1 established
+DRB Configuration: Pending
+Message:
+  rrcConnectionSetup: {
+    rrc-TransactionIdentifier: 0
+    radioResourceConfigDedicated: {
+      srb-ToAddModList: {
+        srb-Identity: 1
+        rlc-Config: {
+          am: {
+            ul-AM-RLC: {
+              t-PollRetransmit: ms45
+              pollPDU: p64
+              pollByte: kBinfinity
+            }
+          }
+        }
+      }
+    }
+  }
+
+RRC Connection Setup Complete
+Timestamp: 2025-07-28 10:00:00.200
+Status: Success
+Security Mode: Activated
+Message:
+  rrcConnectionSetupComplete: {
+    rrc-TransactionIdentifier: 0
+    selectedPLMN-Identity: 1
+    dedicatedInfoNAS: '4517...'H
+  }

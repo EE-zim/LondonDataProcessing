@@ -1,0 +1,50 @@
+%MOBILE PARSED MESSAGE FILE
+%QCAT VERSION   : QCAT 06.30.121
+%SILK VERSION   : SILK_9.83
+%LOG FILE NAME  : Rural_Test_1.hdf
+
+%Confidential - Qualcomm Technologies, Inc.
+2025 Jul 28  12:00:00.000  [2A]  0x1FEA  Coverage Enhancement  --  RRC/Extended Coverage
+RSRP: -110 dBm
+RSRQ: -15 dB
+Coverage Enhancement Level: 3
+
+2025 Jul 28  12:00:02.000  [5D]  0x1FF0  Power Control  --  PHY/Power Control
+Tx Power: 23 dBm
+Path Loss: 135 dB
+Power Headroom: 5 dB
+
+2025 Jul 28  12:00:04.000  [5D]  0x1FF1  Repetition Mode  --  MAC/Message Repetition
+Repetition Factor: 8
+PRACH Repetitions: 4
+PUSCH Repetitions: 16
+
+2025 Jul 28  12:00:06.000  [5D]  0x1FF2  Low Data Rate  --  PDCP/Rural Optimization
+DL Throughput: 10 Mbps
+UL Throughput: 5 Mbps
+Latency: 45 ms
+
+2025 Jul 28  12:00:08.000  [5D]  0x1FF3  Cell Edge Performance  --  RRC/Cell Edge
+Distance from eNB: 8.5 km
+SINR: -2 dB
+Block Error Rate: 5%
+
+2025 Jul 28  12:00:10.000  [5D]  0x1FF4  Interference Management  --  PHY/ICIC
+Inter-cell Interference: -105 dBm
+ICIC Indication: High
+Resource Restriction: 30%
+
+2025 Jul 28  12:00:12.000  [5D]  0x1FF5  Energy Saving  --  MAC/DRX Configuration
+DRX Cycle: Long (2.56 s)
+On Duration: 10 ms
+Active Time: 50 ms
+
+2025 Jul 28  12:00:14.000  [5D]  0x1FF6  Backhaul Limitations  --  Network/Backhaul
+Backhaul Type: Microwave
+Capacity: 200 Mbps
+Delay: 15 ms
+
+2025 Jul 28  12:00:16.000  [5D]  0x1FF7  Weather Impact  --  PHY/Environmental
+Weather Condition: Rain
+Signal Attenuation: 2 dB
+Fade Margin: 8 dB
