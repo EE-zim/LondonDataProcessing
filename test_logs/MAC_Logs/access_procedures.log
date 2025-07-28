@@ -1,0 +1,15 @@
+2025-01-27 14:31:15.567 [MAC] Random access response processing initiated.
+2025-01-27 14:31:15.589 [MAC] Temporary C-RNTI assigned for initial access.
+2025-01-27 14:31:15.612 [MAC] Uplink timing advance value calculated and applied.
+2025-01-27 14:31:15.634 [MAC] Contention resolution procedure activated.
+2025-01-27 14:31:15.656 [MAC] UE identity verification through MAC PDU matching.
+2025-01-27 14:31:15.678 [MAC] Temporary C-RNTI promoted to permanent assignment.
+2025-01-27 14:31:15.701 [MAC] Random access procedure declared successful.
+2025-01-27 14:31:15.723 [MAC] Buffer status reporting mechanism activated.
+2025-01-27 14:31:15.745 [MAC] Logical channel prioritization rules established.
+2025-01-27 14:31:15.767 [MAC] Quality of service parameters configured.
+2025-01-27 14:31:15.789 [MAC] Semi-persistent scheduling resources allocated.
+2025-01-27 14:31:15.812 [MAC] Discontinuous reception patterns configured.
+2025-01-27 14:31:15.834 [MAC] Power control parameters optimized for efficiency.
+2025-01-27 14:31:15.856 [MAC] MAC entity state transitions completed.
+2025-01-27 14:31:15.878 [MAC] Normal operation mode established successfully.

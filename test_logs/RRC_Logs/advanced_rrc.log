@@ -1,0 +1,157 @@
+2024 Jul 28 14:30:25.123 [RRC] UL_DCCH
+Interpreted PDU:
+RRCConnectionRequest ::= {
+    message c1 : rrcConnectionRequest : {
+        criticalExtensions rrcConnectionRequest-r8 : {
+            ue-Identity randomValue : '0110100101011010'B
+            establishmentCause mt-Access
+        }
+    }
+}
+
+Header: 0x412F
+Payload: A1 B2 C3 D4 E5 F6 A7 B8 C9 DA EB FC 
+Length: 24 bytes
+HEX Dump:
+  0000: A1 B2 C3 D4 E5 F6 A7 B8  C9 DA EB FC 01 23 45 67
+  0010: 89 AB CD EF FE DC BA 98  76 54 32 10 11 22 33 44
+
+2024 Jul 28 14:30:26.456 [RRC] DL_DCCH
+Interpreted PDU:
+RRCConnectionSetup ::= {
+    message c1 : rrcConnectionSetup : {
+        criticalExtensions c1 : rrcConnectionSetup-r8 : {
+            radioResourceConfigDedicated {
+                srb-ToAddModList {
+                    SRB-ToAddMod {
+                        srb-Identity 1
+                        rlc-Config defaultValue
+                        logicalChannelConfig defaultValue
+                    }
+                }
+                mac-MainConfig explicitValue : {
+                    ul-SCH-Config {
+                        maxHARQ-Tx n8
+                        periodicBSR-Timer sf16
+                    }
+                }
+                physicalConfigDedicated {
+                    pdsch-ConfigDedicated {
+                        p-a dB-6
+                    }
+                    pucch-ConfigDedicated {
+                        ackNackRepetition setup : {
+                            repetitionFactor n2
+                            n1PUCCH-AN-Rep 0
+                        }
+                    }
+                    pusch-ConfigDedicated {
+                        betaOffset-ACK-Index 10
+                        betaOffset-RI-Index 12
+                        betaOffset-CQI-Index 15
+                    }
+                    uplinkPowerControlDedicated {
+                        p0-UE-PUSCH 0
+                        deltaMCS-Enabled en0
+                        accumulationEnabled TRUE
+                        p0-UE-PUCCH 0
+                        pSRS-Offset 3
+                    }
+                    antennaInfo explicitValue : {
+                        transmissionMode tm3
+                        codebookSubsetRestriction n2TxAntenna-tm3 : '11'B
+                        ue-TransmitAntennaSelection setup : open-loop
+                    }
+                    schedulingRequestConfig setup : {
+                        sr-PUCCH-ResourceIndex 0
+                        sr-ConfigIndex 5
+                        dsr-TransMax n64
+                    }
+                }
+            }
+        }
+    }
+}
+
+2024 Jul 28 14:30:27.789 [MAC] HARQ Process 3
+Value: Uarfcn = 2850, Psc = 123
+BLER: 0.01 dB
+DL assignment for UE 1234
+Transport block size: 1000 bits
+Modulation: QPSK
+Coding rate: 1/3
+
+2024 Jul 28 14:30:28.012 [PHY] Cell Search Results
+Frequency: 2850.0 MHz
+PSC: 123 
+RSCP: -85.2 dBm
+Ec/Io: -12.1 dB
+Cell detected with strong signal
+
+2024 Jul 28 14:30:29.345 [RRC] System Information
+Interpreted PDU:
+BCCH-BCH-Message ::= {
+    message {
+        mib {
+            systemFrameNumber '00110010'B
+            systemBandwidth n25
+            phich-Config {
+                phich-Duration normal
+                phich-Resource oneSixth
+            }
+            spare '0000000000'B
+        }
+    }
+}
+
+2024 Jul 28 14:30:30.678 [RRC] SIB Type 1
+Interpreted PDU:
+BCCH-DL-SCH-Message ::= {
+    message c1 : systemInformation : {
+        criticalExtensions systemInformation-r8 : {
+            sib-TypeAndInfo {
+                sib1 : {
+                    cellAccessRelatedInfo {
+                        plmn-IdentityList {
+                            PLMN-IdentityInfo {
+                                plmn-Identity {
+                                    mcc {
+                                        456, 789, 012
+                                    }
+                                    mnc {
+                                        345, 678
+                                    }
+                                }
+                                cellReservedForOperatorUse notReserved
+                            }
+                        }
+                        trackingAreaCode '0001001000110100'B
+                        cellIdentity '0000100010001100100011110000'B
+                        cellBarred notBarred
+                        intraFreqReselection allowed
+                        csg-Indication FALSE
+                    }
+                    cellSelectionInfo {
+                        q-RxLevMin -70
+                        q-RxLevMinOffset 1
+                    }
+                    freqBandIndicator 7
+                    schedulingInfoList {
+                        SchedulingInfo {
+                            si-Periodicity rf8
+                            sib-MappingInfo {
+                                sibType3
+                            }
+                        }
+                    }
+                    tdd-Config {
+                        subframeAssignment sa2
+                        specialSubframePatterns ssp0
+                    }
+                    si-WindowLength ms1
+                    systemInfoValueTag 0
+                }
+            }
+        }
+    }
+}

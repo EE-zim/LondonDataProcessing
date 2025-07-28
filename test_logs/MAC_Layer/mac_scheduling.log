@@ -1,0 +1,14 @@
+2025-01-15 10:24:01.567 [MAC] UL-SCH resource allocation received.
+2025-01-15 10:24:01.589 [MAC] Transport block size calculated: 1024 bits.
+2025-01-15 10:24:01.612 [MAC] HARQ process 0 activated for uplink transmission.
+2025-01-15 10:24:01.634 [MAC] MAC PDU constructed with LCID mapping.
+2025-01-15 10:24:01.656 [MAC] BSR (Buffer Status Report) included in MAC header.
+2025-01-15 10:24:01.678 [MAC] PHR (Power Headroom Report) added to MAC CE.
+2025-01-15 10:24:01.701 [MAC] CRC attachment completed for transport block.
+2025-01-15 10:24:01.723 [MAC] Transport block sent to physical layer.
+2025-01-15 10:24:01.745 [MAC] DL-SCH reception scheduled for subframe n+4.
+2025-01-15 10:24:01.767 [MAC] PDCCH decoding successful for RNTI matching.
+2025-01-15 10:24:01.789 [MAC] DCI format 1A decoded for downlink allocation.
+2025-01-15 10:24:01.812 [MAC] PDSCH processing initiated for data reception.
+2025-01-15 10:24:01.834 [MAC] Transport block received and CRC check passed.
+2025-01-15 10:24:01.856 [MAC] HARQ ACK scheduled for transmission in PUCCH.

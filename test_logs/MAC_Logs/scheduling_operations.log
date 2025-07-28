@@ -1,0 +1,16 @@
+2025-01-27 14:31:01.123 [MAC] Uplink grant received for transport block transmission.
+2025-01-27 14:31:01.145 [MAC] Resource allocation includes 20 physical resource blocks.
+2025-01-27 14:31:01.167 [MAC] Transport block size calculated as 2048 bits.
+2025-01-27 14:31:01.189 [MAC] HARQ process ID 3 assigned for this transmission.
+2025-01-27 14:31:01.212 [MAC] MAC protocol data unit construction initiated.
+2025-01-27 14:31:01.234 [MAC] Logical channel ID mapping applied to data packets.
+2025-01-27 14:31:01.256 [MAC] Buffer status report included in MAC header.
+2025-01-27 14:31:01.278 [MAC] Power headroom report added as control element.
+2025-01-27 14:31:01.301 [MAC] Cyclic redundancy check appended to transport block.
+2025-01-27 14:31:01.323 [MAC] Transport block forwarded to physical layer.
+2025-01-27 14:31:01.345 [MAC] Downlink assignment decoded from PDCCH successfully.
+2025-01-27 14:31:01.367 [MAC] DCI format 1A processed for resource allocation.
+2025-01-27 14:31:01.389 [MAC] PDSCH decoding initiated for received data.
+2025-01-27 14:31:01.412 [MAC] Transport block CRC verification passed.
+2025-01-27 14:31:01.434 [MAC] HARQ acknowledgment scheduled for transmission.
+2025-01-27 14:31:01.456 [MAC] MAC layer processing cycle completed successfully.

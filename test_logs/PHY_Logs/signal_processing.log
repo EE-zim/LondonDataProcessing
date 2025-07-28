@@ -1,0 +1,16 @@
+2025-01-27 14:32:01.123 [PHY] Cell search procedure initiated on frequency band 7.
+2025-01-27 14:32:01.145 [PHY] Primary synchronization signal detected at subframe 0.
+2025-01-27 14:32:01.167 [PHY] Secondary synchronization signal found at subframe 5.
+2025-01-27 14:32:01.189 [PHY] Physical cell identity calculated as PCI 123.
+2025-01-27 14:32:01.212 [PHY] Frame synchronization achieved with network timing.
+2025-01-27 14:32:01.234 [PHY] Master information block decoding attempted.
+2025-01-27 14:32:01.256 [PHY] System bandwidth determined as 20 MHz configuration.
+2025-01-27 14:32:01.278 [PHY] Physical hybrid ARQ indicator channel configured.
+2025-01-27 14:32:01.301 [PHY] Reference signal received power measured at -85 dBm.
+2025-01-27 14:32:01.323 [PHY] Reference signal received quality calculated as -10 dB.
+2025-01-27 14:32:01.345 [PHY] Channel quality indicator reporting configured.
+2025-01-27 14:32:01.367 [PHY] Precoding matrix indicator selection optimized.
+2025-01-27 14:32:01.389 [PHY] Rank indicator measurements established.
+2025-01-27 14:32:01.412 [PHY] Sounding reference signal parameters configured.
+2025-01-27 14:32:01.434 [PHY] Physical uplink control channel resources allocated.
+2025-01-27 14:32:01.456 [PHY] Physical layer initialization completed successfully.

@@ -1,0 +1,15 @@
+2025-01-27 14:30:15.567 [RRC] Measurement configuration received from network.
+2025-01-27 14:30:15.589 [RRC] RSRP and RSRQ measurements configured for neighboring cells.
+2025-01-27 14:30:15.612 [RRC] A1 threshold set to -110 dBm for serving cell quality.
+2025-01-27 14:30:15.634 [RRC] A2 threshold configured at -115 dBm for quality degradation.
+2025-01-27 14:30:15.656 [RRC] A3 offset parameter set to 3 dB for handover decisions.
+2025-01-27 14:30:15.678 [RRC] Measurement report triggering conditions established.
+2025-01-27 14:30:30.701 [RRC] Serving cell RSRP drops below A2 threshold.
+2025-01-27 14:30:30.723 [RRC] Neighboring cell PCI 256 shows stronger signal.
+2025-01-27 14:30:30.745 [RRC] A3 event triggered for potential handover candidate.
+2025-01-27 14:30:30.767 [RRC] Measurement report transmitted to serving eNodeB.
+2025-01-27 14:30:30.789 [RRC] Handover preparation phase initiated by network.
+2025-01-27 14:30:30.812 [RRC] Target cell admission control procedures started.
+2025-01-27 14:30:30.834 [RRC] Handover command received with mobility control information.
+2025-01-27 14:30:30.856 [RRC] Random access procedure initiated to target cell.
+2025-01-27 14:30:30.878 [RRC] Handover execution phase completed successfully.

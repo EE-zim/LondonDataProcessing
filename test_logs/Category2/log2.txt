@@ -1,0 +1,17 @@
+QXDM Log File - Category 2 - Sample 1
+========================================
+
+2025-01-15 11:15:22 [ERROR] Connection timeout occurred
+2025-01-15 11:15:23 [INFO] Retrying connection attempt
+2025-01-15 11:15:24 [DEBUG] Retry count: 1/3
+2025-01-15 11:15:25 [INFO] Connection re-established
+2025-01-15 11:15:26 [DEBUG] Authentication successful
+2025-01-15 11:15:27 [INFO] Service activation completed
+2025-01-15 11:15:28 [DEBUG] Bearer configuration updated
+2025-01-15 11:15:29 [WARN] QoS parameters adjusted
+2025-01-15 11:15:30 [INFO] Normal operation resumed
+2025-01-15 11:15:31 [DEBUG] Performance metrics logged
+
+This log represents a different category of QXDM logs with error recovery,
+authentication processes, and service management activities.
+It demonstrates different operational scenarios compared to Category 1.

@@ -1,0 +1,13 @@
+2025-01-15 10:24:15.123 [RRC] Handover preparation initiated.
+2025-01-15 10:24:15.145 [RRC] Measurement report triggered by A3 event.
+2025-01-15 10:24:15.167 [RRC] Target cell RSRP: -85 dBm, serving cell RSRP: -95 dBm.
+2025-01-15 10:24:15.189 [RRC] Handover decision made by eNodeB.
+2025-01-15 10:24:15.212 [RRC] RRC Connection Reconfiguration with mobility control info.
+2025-01-15 10:24:15.234 [RRC] Random access to target cell initiated.
+2025-01-15 10:24:15.256 [RRC] Contention-free random access completed.
+2025-01-15 10:24:15.278 [RRC] RRC Connection Reconfiguration Complete sent.
+2025-01-15 10:24:15.301 [RRC] Handover procedure completed successfully.
+2025-01-15 10:24:15.323 [RRC] UE attached to new serving cell PCI: 256.
+2025-01-15 10:24:15.345 [RRC] Context transfer from source to target complete.
+2025-01-15 10:24:15.367 [RRC] Data forwarding tunnel established.
+2025-01-15 10:24:15.389 [RRC] Normal operation resumed in target cell.

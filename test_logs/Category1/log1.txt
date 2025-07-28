@@ -1,0 +1,17 @@
+QXDM Log File - Category 1 - Sample 1
+========================================
+
+2025-01-15 10:30:45 [INFO] Network connection established successfully
+2025-01-15 10:30:46 [DEBUG] Signal strength: -75 dBm
+2025-01-15 10:30:47 [INFO] Data session started
+2025-01-15 10:30:48 [DEBUG] Throughput: 25.4 Mbps down, 12.1 Mbps up
+2025-01-15 10:30:49 [WARN] High latency detected: 150ms
+2025-01-15 10:30:50 [INFO] Connection quality improved
+2025-01-15 10:30:51 [DEBUG] Cell tower ID: 12345
+2025-01-15 10:30:52 [INFO] Handover to adjacent cell completed
+2025-01-15 10:30:53 [DEBUG] New signal strength: -72 dBm
+2025-01-15 10:30:54 [INFO] Data transfer completed successfully
+
+This is a sample QXDM log file for testing the analysis pipeline.
+The file contains typical cellular network log entries with timestamps,
+log levels, and various network performance metrics.

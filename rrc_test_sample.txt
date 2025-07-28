@@ -1,0 +1,64 @@
+2025 Jul 18  12:27:54.349  [CD]  0xB0C0  LTE RRC OTA Packet  --  PCCH / Paging
+Subscription ID = 2
+Pkt Version = 22
+RRC Release Number.Major.minor = 12.7.6
+Radio Bearer ID = 0, Physical Cell ID = 341
+Freq = 1363
+SysFrameNum = 15, SubFrameNum = 9
+PDU Number = PCCH Message,    Msg Length = 7
+SIB Mask in SI =  0x00
+
+Interpreted PDU:
+
+value PCCH-Message ::= 
+{
+  message c1 : paging : 
+      {
+        pagingRecordList 
+        {
+          {
+            ue-Identity s-TMSI : 
+              {
+                mmec '00001001'B,
+                m-TMSI '11000110 10100010 10100010 00110100'B
+              },
+            cn-Domain ps
+          }
+        }
+      }
+}
+
+    Length:  39
+    Header:  27 00 C0 B0 CD 77 A1 2C 99 A3 0B 01 
+    Payload: 16 0C 76 02 B9 01 22 0B 0F 09 00 00 
+             00 07 00 48 C6 A2 A2 34 80 00 00 00 
+             00 00 00 00 00 00 00 00 00 
+
+2025 Jul 18  12:17:20.842  [FA]  0xB0C0  LTE RRC OTA Packet  --  UL_DCCH / SecurityModeComplete
+Subscription ID = 1
+Pkt Version = 22
+RRC Release Number.Major.minor = 12.7.6
+Radio Bearer ID = 1, Physical Cell ID = 441
+Freq = 2850
+SysFrameNum = N/A, SubFrameNum = 0
+PDU Number = UL_DCCH Message,    Msg Length = 2
+SIB Mask in SI =  0x00
+
+Interpreted PDU:
+
+value UL-DCCH-Message ::= 
+{
+  message c1 : securityModeComplete : 
+      {
+        rrc-TransactionIdentifier 0,
+        criticalExtensions securityModeComplete-r8 : 
+          {
+          }
+      }
+}
+
+
+    Length:  33
+    Header:  21 00 C0 B0 FA 77 A1 2C 99 A3 0B 01 
+    Payload: 16 0C 76 01 B9 01 22 0B 00 00 00 00 
+             08 00 00 00 00 02 00 28 00 

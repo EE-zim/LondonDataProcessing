@@ -1,0 +1,14 @@
+2025-01-15 10:23:45.123 [RRC] Connection establishment initiated.
+2025-01-15 10:23:45.145 [RRC] Random access preamble transmitted on PRACH.
+2025-01-15 10:23:45.167 [RRC] Random access response received from eNodeB.
+2025-01-15 10:23:45.189 [RRC] RRC Connection Request sent to network.
+2025-01-15 10:23:45.234 [RRC] RRC Connection Setup received from eNodeB.
+2025-01-15 10:23:45.256 [RRC] SRB1 configured for signaling radio bearer.
+2025-01-15 10:23:45.278 [RRC] RRC Connection Setup Complete sent to network.
+2025-01-15 10:23:45.301 [RRC] UE now in RRC_CONNECTED state.
+2025-01-15 10:23:45.323 [RRC] Security mode command received from MME.
+2025-01-15 10:23:45.345 [RRC] Ciphering and integrity algorithms activated.
+2025-01-15 10:23:45.367 [RRC] Security mode complete message sent.
+2025-01-15 10:23:45.389 [RRC] UE capability enquiry received from eNodeB.
+2025-01-15 10:23:45.412 [RRC] UE capability information transmitted.
+2025-01-15 10:23:45.434 [RRC] RRC connection establishment completed successfully.
