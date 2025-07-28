@@ -27,14 +27,14 @@ import torch
 import psutil
 from tqdm.auto import tqdm
 from sentence_transformers import SentenceTransformer
-from metric_utils import (
+from .metric_utils import (
     semantic_spread,
     redundancy_index,
     cluster_entropy,
     change_mag,
     novelty_density,
 )
-from log_processor import QXDMLogProcessor
+from .log_processor import QXDMLogProcessor
 
 try:
     import pynvml
