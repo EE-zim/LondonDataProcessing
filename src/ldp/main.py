@@ -47,6 +47,16 @@ try:
 except ImportError:           # make wandb optional
     wandb = None
 
+# Supported log file extensions (used in file discovery and messaging)
+SUPPORTED_EXTENSIONS = ('.txt', '.md', '.pdf', '.log', '.csv', '.json', '.xml')
+_SUPPORTED_EXTENSIONS_STR = ', '.join(SUPPORTED_EXTENSIONS)
+
+def is_supported_file(f: Path) -> bool:
+    return f.is_file() and f.suffix.lower() in SUPPORTED_EXTENSIONS
+
+def find_supported_files(root: Path) -> List[Path]:
+    return [f for f in root.rglob('*') if is_supported_file(f)]
+
 
 # ---------------------------------------------------------------------------
 # System optimization utilities
@@ -236,13 +246,12 @@ def get_sentences(qxdm_root: Path, block_size: int, settings: dict,
         # Option 2: If you want to process all files directly without subdirectories
         if not log_categories:
             # Check if there are any supported files in the root directory
-            supported_files = [f for f in qxdm_root.rglob('*') 
-                             if f.is_file() and f.suffix.lower() in ('.txt', '.md', '.pdf', '.log', '.csv', '.json', '.xml')]
+            supported_files = find_supported_files(qxdm_root)
             if supported_files:
                 log_categories = ['all_logs']  # Single category for all log files
             else:
                 print(f'[!] No supported log files found in {qxdm_root}')
-                print('[!] Supported extensions: .txt, .md, .pdf, .log, .csv, .json, .xml')
+                print(f'[!] Supported extensions: {_SUPPORTED_EXTENSIONS_STR}')
                 return [], {}
     
     print('   Log categories:', ', '.join(log_categories))
@@ -262,12 +271,10 @@ def get_sentences(qxdm_root: Path, block_size: int, settings: dict,
 
         if category == 'all_logs':
             # Process all files directly from qxdm_root
-            files = [f for f in qxdm_root.rglob('*') 
-                    if f.is_file() and f.suffix.lower() in ('.txt', '.md', '.pdf', '.log', '.csv', '.json', '.xml')]
+            files = find_supported_files(qxdm_root)
         else:
             # Process files from subdirectory
-            files = [f for f in (qxdm_root / category).rglob('*')
-                    if f.is_file() and f.suffix.lower() in ('.txt', '.md', '.pdf', '.log', '.csv', '.json', '.xml')]
+            files = find_supported_files(qxdm_root / category)
             
         print(f'   [{category}] processing {len(files)} files with 3GPP parser')
         
@@ -418,7 +425,7 @@ def compute_metrics(X_all: np.ndarray, rel_slice: Dict[str, slice],
     # Check if we have any data
     if len(rel_slice) == 0:
         print('[!] No data found! Please check your QXDM_ROOT path and ensure it contains log files.')
-        print('[!] Supported file extensions: .txt, .md, .pdf, .log, .csv, .json, .xml')
+        print(f'[!] Supported file extensions: {_SUPPORTED_EXTENSIONS_STR}')
         return
     
     if len(X_all) == 0:
@@ -680,15 +687,14 @@ def main() -> None:
     print(f'>>> First few items: {[f.name for f in files_in_root[:5]]}')
     
     # Check for supported files
-    supported_files = [f for f in QXDM_ROOT.rglob('*') 
-                      if f.is_file() and f.suffix.lower() in ('.txt', '.md', '.pdf', '.log', '.csv', '.json', '.xml')]
+    supported_files = find_supported_files(QXDM_ROOT)
     if not supported_files:
         print('>>> [!] No supported log files found!')
-        print('>>> [!] Supported extensions: .txt, .md, .pdf, .log, .csv, .json, .xml')
+        print(f'>>> [!] Supported extensions: {_SUPPORTED_EXTENSIONS_STR}')
         print('>>> [!] Exiting...')
         import sys
         sys.exit(1)
-    
+
     print(f'>>> Found {len(supported_files)} supported files')
 
     multiprocessing.freeze_support()

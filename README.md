@@ -2,7 +2,12 @@
 
 This repository contains a small toolkit for processing 3GPP/QXDM log files. It extracts technical sentences from large archives and computes a range of metrics using sentence embeddings.
 
-The code has been refactored into the `ldp` Python package (located under `src/ldp`). You can run the pipeline either directly or via `python -m ldp`.
+The code has been refactored into the `ldp` Python package (located under `src/ldp`).
+Run the pipeline with:
+
+```bash
+python -m ldp --help
+```
 
 ## Features
 
@@ -44,9 +49,9 @@ Example logs for testing can be found in `test_logs/` and `test_dataset/`.
 ## Repository layout
 
 ```
-src/ldp/            Core package modules
-notebooks/          Example Jupyter notebooks
-scripts/            Helper shell scripts
+src/ldp/           Core package modules
+test_logs/         Sample log files for quick testing
+test_dataset/      Example test dataset and processor script
 ```
 
 ## License
