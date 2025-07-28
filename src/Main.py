@@ -208,13 +208,13 @@ def get_sentences(qxdm_root: Path, block_size: int, settings: dict,
 
     print('[i] Starting 3GPP/QXDM log processing with specialized parser...')
     
-    # 初始化3GPP日志处理器
+    # Initialize the 3GPP log processor
     try:
-        # 优先使用完整模型以获得更好的分句效果
+        # Prefer full model for better sentence segmentation
         log_processor = QXDMLogProcessor(use_full_model=True)
         print('[✓] Initialized QXDM log processor with full spaCy model')
     except Exception as e:
-        # 降级到轻量模型
+        # Fall back to lightweight model
         print(f'[warn] Full model unavailable ({e}), using lightweight model')
         log_processor = QXDMLogProcessor(use_full_model=False)
         print('[✓] Initialized QXDM log processor with blank spaCy model')

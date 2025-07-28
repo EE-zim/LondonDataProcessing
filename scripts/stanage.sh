@@ -43,7 +43,7 @@ export QXDM_ROOT=/mnt/parscratch/users/$USER/QXDM_Logs
 # Create checkpoint directory for large-scale processing
 mkdir -p checkpoints
 
-# 启动QXDM日志分析作业
+# Start QXDM log analysis job
 echo "QXDM Log Analysis Job Start!"
 echo "System Configuration:"
 echo "  → CPUs: $SLURM_CPUS_PER_TASK"
@@ -59,7 +59,7 @@ srun python src/tspec_metrics_2.py \
     --embeds-file checkpoints/qxdm_embeddings.npz \
     --log-sys \
     --sys-interval 60
-# 运行完毕后，输出完成消息和结果统计
+# After completion, output summary and results
 echo ""
 echo "=============================================="
 echo "QXDM Log Analysis Job completed successfully!"

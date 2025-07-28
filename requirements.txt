@@ -1,0 +1,12 @@
+numpy
+pandas
+torch
+sentence-transformers
+scikit-learn
+scipy
+psutil
+tqdm
+spacy
+pdfminer.six
+pynvml
+wandb
