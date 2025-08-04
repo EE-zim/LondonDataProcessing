@@ -27,14 +27,26 @@ import torch
 import psutil
 from tqdm.auto import tqdm
 from sentence_transformers import SentenceTransformer
-from .metric_utils import (
+
+# When running ``main.py`` directly the package context is not initialised and
+# relative imports like ``from .metric_utils`` fail.  Detect this situation and
+# add the parent directory to ``sys.path`` so absolute imports work as well,
+# enabling both ``python -m ldp`` and ``python src/ldp/main.py`` for local
+# debugging.
+if __package__ is None or __package__ == "":  # pragma: no cover - runtime setup
+    import sys as _sys
+    from pathlib import Path as _Path
+
+    _sys.path.append(str(_Path(__file__).resolve().parent.parent))
+
+from ldp.metric_utils import (
     semantic_spread,
     redundancy_index,
     cluster_entropy,
     change_mag,
     novelty_density,
 )
-from .log_processor import QXDMLogProcessor
+from ldp.log_processor import QXDMLogProcessor
 
 try:
     import pynvml
