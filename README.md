@@ -2,8 +2,18 @@
 
 This repository contains a small toolkit for processing 3GPP/QXDM log files. It extracts technical sentences from large archives and computes a range of metrics using sentence embeddings.
 
-The code has been refactored into the `ldp` Python package (located under `src/ldp`).
-Run the pipeline with:
+The code has been refactored into the `ldp` Python package (located under
+`src/ldp`).  When running directly from the repository without installing the
+package, ensure that the `src` directory is on your `PYTHONPATH`:
+
+```bash
+PYTHONPATH=src python -m ldp --help
+# or
+python src/ldp/main.py --help
+```
+
+If you install the project (for example with `pip install -e .`), the module can
+be invoked simply as:
 
 ```bash
 python -m ldp --help
@@ -23,18 +33,27 @@ python -m ldp --help
 pip install -r requirements.txt
 ```
 
-Optionally install the package in editable mode:
+Optionally install the package in editable mode, which also exposes the `ldp` console script:
 
 ```bash
 pip install -e .
+ldp --help  # verify the CLI is available
 ```
 
 ## Usage
 
-Run the pipeline with:
+From the repository root without installing the package:
 
 ```bash
-python -m ldp --help
+PYTHONPATH=src python -m ldp --help
+# or
+python src/ldp/main.py --help
+```
+
+After installation (`pip install -e .`) the command becomes:
+
+```bash
+python -m ldp --help  # or simply `ldp --help`
 ```
 
 Important environment variables:
